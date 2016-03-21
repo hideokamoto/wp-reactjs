@@ -5,6 +5,7 @@ This is React Templates to show WP REST API's data.
 - WordPress Site that activated WP REST API(Version2) Plugin:To make API Endpoint for WordPress  
 - Node.js:To build code & run local Server
 - npm:To get React & Helper Node Modules
+- jQuery:To send request to WP REST API endpoint
 
 ##Getting Start
 ```
