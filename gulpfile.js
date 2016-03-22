@@ -9,7 +9,7 @@ gulp.task('browserify', function() {
     .transform(babelify)
     .bundle()
     .on("error", function (err) { console.log("Error : " + err.message); })
-    .pipe(source('app.js'))
+    .pipe(source('demo/app.js'))
     .pipe(gulp.dest('./'))
 });
 
@@ -19,7 +19,7 @@ gulp.task('watch', function() {
 });
 
 gulp.task('webserver', function() {
-  gulp.src('./')
+  gulp.src('./demo')
     .pipe(webserver({
       host: '127.0.0.1',
       livereload: true
