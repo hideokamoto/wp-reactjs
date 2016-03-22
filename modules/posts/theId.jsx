@@ -1,7 +1,7 @@
 import React from 'react'
 import { render } from 'react-dom'
 
-var theId = React.createClass({
+var TheId = React.createClass({
 	render: function() {
 		return(
 			<div>
@@ -11,4 +11,4 @@ var theId = React.createClass({
 	}
 });
 
-module.exports = theId;
+module.exports = TheId;

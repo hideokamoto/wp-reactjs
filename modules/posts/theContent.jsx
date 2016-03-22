@@ -1,7 +1,7 @@
 import React from 'react'
 import { render } from 'react-dom'
 
-var theContent = React.createClass({
+var TheContent = React.createClass({
 	render: function() {
 		return(
 			<div>
@@ -11,4 +11,4 @@ var theContent = React.createClass({
 	}
 });
 
-module.exports = theContent;
+module.exports = TheContent;

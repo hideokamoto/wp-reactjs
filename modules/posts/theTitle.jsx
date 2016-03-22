@@ -1,7 +1,7 @@
 import React from 'react'
 import { render } from 'react-dom'
 
-var theTitle = React.createClass({
+var TheTitle = React.createClass({
 	render: function() {
 		return(
 			<div>
@@ -11,4 +11,4 @@ var theTitle = React.createClass({
 	}
 });
 
-module.exports = theTitle;
+module.exports = TheTitle;

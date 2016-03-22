@@ -1,7 +1,7 @@
 import React from 'react'
 import { render } from 'react-dom'
 
-var theDate = React.createClass({
+var TheDate = React.createClass({
 	render: function() {
 		return(
 			<div>
@@ -11,4 +11,4 @@ var theDate = React.createClass({
 	}
 });
 
-module.exports = theDate;
+module.exports = TheDate;

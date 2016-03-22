@@ -1,7 +1,7 @@
 import React from 'react'
 import { render } from 'react-dom'
 
-var thePostThumbnail = React.createClass({
+var ThePostThumbnail = React.createClass({
 	render: function() {
 		return(
 			<div>
@@ -11,4 +11,4 @@ var thePostThumbnail = React.createClass({
 	}
 });
 
-module.exports = thePostThumbnail;
+module.exports = ThePostThumbnail;
