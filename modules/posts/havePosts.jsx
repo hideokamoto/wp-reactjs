@@ -6,7 +6,8 @@ const HavePosts = React.createClass({
 		return {
 			apiType: 'wp/v2/posts',
 			query: '',
-			apiRoot: ''
+			apiRoot: '',
+			className: 'post'
 		}
 	},
 	getInitialState: function() {
@@ -51,9 +52,25 @@ const HavePosts = React.createClass({
 		this.loadPostsFromServer();
 	},
 	render: function() {
-	console.log(this.state.data);
+		var postNodes = this.state.data.map( function (post) {
+			var childNode = [];
+			Object.keys( this ).forEach( function( key ) {
+				childNode[key] = Object.assign(
+					{},
+					this[key],
+					{
+						props:{
+							data: post,
+							className: this[key].props.className
+						}
+					}
+				);
+			}, this );
+			return childNode;
+		}, this.props.children );
 		return(
-			<div>aaa
+			<div className={this.props.className}>
+				{postNodes}
 			</div>
 		);
 	}
