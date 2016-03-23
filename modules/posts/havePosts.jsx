@@ -52,6 +52,8 @@ const HavePosts = React.createClass({
 		this.loadPostsFromServer();
 	},
 	render: function() {
+		var i = 0;
+		var articleClassName = this.props.className;
 		var postNodes = this.state.data.map( function (post) {
 			var childNode = [];
 			Object.keys( this ).forEach( function( key ) {
@@ -66,10 +68,12 @@ const HavePosts = React.createClass({
 					}
 				);
 			}, this );
-			return childNode;
+			var returnNode = <article key={i} className={articleClassName}>{childNode}</article>;
+			i++;
+			return returnNode;
 		}, this.props.children );
 		return(
-			<div className={this.props.className}>
+			<div className={this.props.rowClassName}>
 				{postNodes}
 			</div>
 		);

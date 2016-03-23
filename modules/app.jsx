@@ -2,7 +2,8 @@ import React from 'react'
 import { render } from 'react-dom'
 
 const HavePosts = require('./posts/havePosts.jsx');
-const Title = require('./posts/theTItle.jsx');
+const TheTitle = require('./posts/theTitle.jsx');
+const TheContent = require('./posts/theContent.jsx');
 var wpQuery = {
 	post_type: 'post',
 	per_page: 5,
@@ -19,8 +20,11 @@ render((
 		apiType='wp/v2/posts'
 		query={wpQuery}
 		className='sample post'
+		rowClassName='sample postList'
 	>
-		<Title className='sample title'/>
-		<Title className='sample title'/>
+		<TheTitle
+			className='sample title'
+		/>
+		<TheContent className='sample title'/>
 	</HavePosts>
 ), document.getElementById('app'))
