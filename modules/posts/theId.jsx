@@ -4,7 +4,6 @@ import { render } from 'react-dom'
 var TheId = React.createClass({
 	render: function() {
 		if ( this.props.data ) {
-			console.log(this.props.data);
 			var id = this.props.data.id;
 		} else {
 			var id = 'Loading';
