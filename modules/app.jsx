@@ -4,15 +4,18 @@ import { render } from 'react-dom'
 const HavePosts = require('./posts/havePosts.jsx');
 const TheTitle = require('./posts/theTitle.jsx');
 const TheContent = require('./posts/theContent.jsx');
+const TheExcerpt = require('./posts/theExcerpt.jsx');
+const ThePostThumbnail = require('./posts/thePostThumbnail.jsx');
+const TheId = require('./posts/theId.jsx');
+const TheDate = require('./posts/theDate.jsx');
 var wpQuery = {
 	post_type: 'post',
-	per_page: 5,
+	per_page: 10,
 	filter: {
 		orderby: 'date',
 		order: 'DESC'
 	}
 };
-var dummy = 'a';
 
 render((
   	<HavePosts
@@ -22,9 +25,11 @@ render((
 		className='sample post'
 		rowClassName='sample postList'
 	>
-		<TheTitle
-			className='sample title'
-		/>
-		<TheContent className='sample title'/>
+		<TheTitle className='sample title'/>
+		<TheDate className='sample date'/>
+		<ThePostThumbnail className='sample thumb'/>
+		<TheId className='sample id'/>
+		<TheExcerpt className='sample excerpt'/>
+		<TheContent className='sample content'/>
 	</HavePosts>
 ), document.getElementById('app'))

@@ -9,7 +9,7 @@ var TheTitle = React.createClass({
 			var title = 'Loading';
 		}
 		return(
-			<div className={this.props.className}>{title}</div>
+			<h1 className={this.props.className}>{title}</h1>
 		);
 	}
 });
