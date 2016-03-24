@@ -12,6 +12,7 @@ const TheId            = require('./posts/theId.jsx');
 const TheDate          = require('./posts/theDate.jsx');
 const TheCategories    = require('./posts/theCategories.jsx');
 const TheTags          = require('./posts/theTags.jsx');
+const TheAuthor        = require('./posts/theAuthor.jsx');
 
 //Demo1
 var Demo1 = React.createClass({
@@ -30,6 +31,7 @@ var Demo1 = React.createClass({
 				rowClassName='demo-1 postList'
 			>
 				<TheTitle className='title page-header'/>
+				<TheAuthor className='author'/>
 				<TheDate className='date'/>
 				<TheTags className="tag" />
 				<TheCategories className="cat" />
