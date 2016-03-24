@@ -10,6 +10,8 @@ const TheExcerpt       = require('./posts/theExcerpt.jsx');
 const ThePostThumbnail = require('./posts/thePostThumbnail.jsx');
 const TheId            = require('./posts/theId.jsx');
 const TheDate          = require('./posts/theDate.jsx');
+const TheCategories    = require('./posts/theCategories.jsx');
+const TheTags          = require('./posts/theTags.jsx');
 
 //Demo1
 var Demo1 = React.createClass({
@@ -29,6 +31,8 @@ var Demo1 = React.createClass({
 			>
 				<TheTitle className='title page-header'/>
 				<TheDate className='date'/>
+				<TheTags className="tag" />
+				<TheCategories className="cat" />
 				<ThePostThumbnail className='thumb'/>
 				<TheExcerpt className='excerpt'/>
 			</HavePosts>
